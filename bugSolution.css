@@ -1,0 +1,12 @@
+/* bugSolution.css */
+#myElement {
+  width: calc(100% - 10px);
+  /* Ensure the parent container has explicitly defined width for the calculation to work correctly */
+}
+.parent {
+  width: 500px; /*Explicit width to avoid issues*/
+}
+/*Use parentheses for complex calculations to enforce order of operations*/
+#anotherElement {
+  width: calc((100% - 20px) / 2);
+}
